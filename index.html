@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AI贪吃蛇</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="game-container">
+    <div id="stats-panel" class="panel">
+      <h2>蛇群统计</h2>
+      <div id="snake-stats"></div>
+    </div>
+    <div class="game-area">
+      <canvas id="game-canvas" width="1000" height="1000"></canvas>
+    </div>
+    <div id="controls-panel" class="panel">
+      <h2>控制面板</h2>
+      <div id="game-btns">
+        <button id="start-btn"><span class="fi fi-rs-play"></span></button>
+        <button id="pause-btn"><span class="fi fi-rs-pause"></span></button>
+        <button id="reset-btn"><span class="fi fi-rs-refresh"></span></button>
+      </div>
+      <div>
+        速度控制:
+        <input type="range" id="speed-control" min="0" max="500" value="300" step="10">
+        <span id="speed-value">300ms</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/snake.js"></script>
+  <script src="js/food.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/controls.js"></script>
+</body>
+
+</html>

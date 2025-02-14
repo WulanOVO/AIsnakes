@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.game-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.panel {
+  height: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+#stats-panel {
+  width: 250px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+}
+
+#snake-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.snake-card {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.snake-card.leader {
+  outline: 5px solid #1f1f1f;
+}
+
+.snake-card .stat-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  color: #ffffffe6;
+}
+
+.game-area {
+  flex-grow: 1;
+  position: relative;
+}
+
+#game-canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+#controls-panel {
+  width: 350px;
+}
+
+#controls-panel div {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 0.9em;
+}
+
+#game-btns button {
+  padding: 6px 6px 3px;
+  border: none;
+  border-radius: 5px;
+}
+
+#start-btn {
+  display: none;
+  background-color: #4caf50;
+  color: white;
+}
+
+#pause-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+#reset-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+#speed-control {
+  width: 150px;
+}
+
+#speed-value {
+  min-width: 60px;
+}
